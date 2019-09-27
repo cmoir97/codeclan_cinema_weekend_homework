@@ -4,8 +4,12 @@ require_relative("models/ticket")
 
 require('pry')
 
+Ticket.delete_all()
+Film.delete_all()
+Customer.delete_all()
+
 customer1 = Customer.new({'name' => 'Cameron', 'funds' => 100})
-customer2 = Customer.new({'name' => 'Chris', 'funds' => 50})
+customer2 = Customer.new({'name' => 'Christopher', 'funds' => 50})
 customer1.save()
 customer2.save()
 
