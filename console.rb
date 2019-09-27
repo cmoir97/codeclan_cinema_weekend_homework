@@ -9,6 +9,7 @@ customer1.save()
 
 
 film1 = Film.new({'title' => 'There Will Be Blood', 'price' => 10})
+film1.save()
 
 
 ticket1 = Ticket.new({'customer_id' => customer1.id(), 'film_id' => film1.id()})
