@@ -38,7 +38,6 @@ class Customer
     film_hashes = SqlRunner.run(sql, values)
     result = film_hashes.map { |film_hash| Film.new(film_hash) }
     return result
-
   end
 
   def self.all()
