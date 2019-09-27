@@ -1,6 +1,6 @@
-DROP TABLE  tickets IF EXISTS;
-DROP TABLE  films IF EXISTS;
-DROP TABLE  customers IF EXISTS;
+DROP TABLE  tickets;
+DROP TABLE  films;
+DROP TABLE  customers;
 
 CREATE TABLE customers(
   name VARCHAR(255),

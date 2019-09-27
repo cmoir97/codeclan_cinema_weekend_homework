@@ -5,6 +5,7 @@ require_relative("models/ticket")
 require('pry')
 
 customer1 = Customer.new({'name' => 'Cameron', 'funds' => 50})
+customer1.save()
 
 
 film1 = Film.new({'title' => 'There Will Be Blood', 'price' => 10})
