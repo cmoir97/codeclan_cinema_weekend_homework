@@ -1,4 +1,5 @@
 require_relative('../db/sql_runner')
+require_relative('ticket')
 
 class Customer
 
@@ -37,6 +38,11 @@ class Customer
     values = [@id]
     film_hashes = SqlRunner.run(sql, values)
     result = film_hashes.map { |film_hash| Film.new(film_hash) }
+    return result
+  end
+
+  def number_of_tickets()
+    result = films().length()
     return result
   end
 
