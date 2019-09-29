@@ -26,8 +26,8 @@ ticket1.save()
 ticket2.save()
 
 
-p customer1.number_of_tickets()
-
+# p customer1.number_of_tickets()
+p film1.number_of_customers_seeing_film()
 
 
 
