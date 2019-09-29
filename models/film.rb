@@ -40,9 +40,6 @@ class Film
     return result
   end
 
-  def customer_count()
-   return customers().length()
- end
 
  def number_of_customers_seeing_film()
    return customers().length
